@@ -1,0 +1,66 @@
+.navbar {
+  margin: 0;
+  background-color: #24B1CD;
+  color: white;
+  height: 50px;
+}
+
+.navbar_image{
+  height: 40px;
+  position: absolute;
+  right: 31vw;  
+  top: 5px;
+  display: inline-block;
+}
+
+img{
+  height: 40px;
+  width: 40px;
+}
+
+.navbar_left, .navbar_right{
+  display: inline-block;
+  height: 50px;
+}
+
+.navbar_left{
+	position: absolute;
+	left: 10vw;
+}
+
+.navbar_right{
+	position: absolute;
+	right: 10vw;
+}
+
+.navbar_left div{
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 10vw;
+  position: relative;
+}
+
+.navbar_left .navbar_div:hover{
+	background-color: #29E8F5;
+	transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar_right div{
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+	width: 10vw;
+	position: relative;
+}
+
+.navbar_right div:hover{
+	background-color: #29E8F5;
+	transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar_div{
+  color: white;
+}
