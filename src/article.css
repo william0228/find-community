@@ -1,0 +1,126 @@
+
+
+html, body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ECECEB;
+}
+
+/* $theme-color:#4A90E2;
+.color-white{color:white;}
+.bg-white{background-color: white;}*/
+
+.block{
+  background-color:#FFFFFF;
+  margin-top:476px;
+  margin-left:17.27px;
+  height:992px;
+  width:951px;
+}
+.font{
+  font-size:20px;
+  /*font-family:微軟正黑體;*/
+  
+  float:left;
+  height:28px;
+  width:100px;
+  margin-top: 11px;
+  margin-left: 18.27px;
+}
+.btn-primary{
+    float:left;
+    margin-top:27px;
+    left:783.66px;
+    position: absolute;
+  }
+.content{
+    margin-top:99px;
+    height:174px;
+    width:950px;
+}
+.image{
+    float:left;
+    margin-left: 17.27px;
+}
+.font-title{
+  float:left;
+  font-size:20px;
+  margin-left: 70.34px;
+  height:21.39px;
+  width:172.66px;
+}
+.btn-success{
+  margin-left:121.3px;
+}
+.btn-danger{
+  margin-left:25.71px;
+}
+.font-content{
+  /*float:left;*/
+  font-size:18px;
+  margin-left:474.04px;
+  margin-top: 16.81px;
+  height:159.7px;
+  width:375.47px;
+  position: absolute;
+}
+.btn-link{
+  height:25.98px;
+  width:119.67px;
+  margin-top: -50px;
+  margin-left: 785.52px;
+}
+.custom-navbar{
+  height: 76px;
+  background-color: $theme-color;
+  .custom-nav-link{
+   line-height: 76px;
+   font-size: 28px;
+   color: #00408B;
+   cursor: pointer;
+   transition: all 0.2s;
+   &.active{
+     color: white;
+     line-height: 71px;
+     box-sizing: border-box;
+     border-bottom: 5px solid #00408B;
+    }
+  }
+} 
+
+.add-task{
+  font-size: 1.75rem;
+  color: #C8C8C8;
+  border-radius: 5px;
+  border: 2px solid #C8C8C8;
+}
+
+.todo{
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  &.important{
+    background-color:#FFF2DC;
+    .fa-star{color:#F5A623; }
+  }
+&done{
+  deleted{
+    text-decoration: line-through;
+    color:#9B9B9B;
+     } 
+  }  
+  .checkbox{
+    width: 24px;
+    height: 24px;
+    font-size:24px;
+    cursor: pointer;
+    color: $theme-color;
+  }
+  .actions{
+    font-size: 24px;
+    letter-spacing: 10px;
+  }
+}
+
+.remain{
+  color: #C8C8C8;
+  font-style:italic;
+}

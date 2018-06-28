@@ -27,14 +27,6 @@ class NewArticle extends Component {
 
 			            </div>
 
-            
-
-			        
-
-
-
-
-
 
 
                  </div>

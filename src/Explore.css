@@ -1,0 +1,87 @@
+.e-block{
+	width: 1366px;
+	height: 1233px;
+	background-color: #ECECEB;
+}
+.navbar{
+	background-color: #24B1CD;
+	height: 50px;
+	margin-top: 150px;
+}
+.list{
+	margin-top: 116px; 
+	width: 888px;
+}
+.e-title{
+	margin-top: 82px;
+
+}
+
+.title-1{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 197px;
+}
+.title-2{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 313px;
+}
+.title-3{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 24px;
+}
+
+.listblock{
+	width: 700px;
+	height: 43px;
+	background-color: white;
+	margin-left: 187px;
+	margin-top: 30px;
+}
+.title-4{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.title-5{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 224px;
+	margin-top: 10px;
+}
+.title-6{
+	font-size: 16px;
+	color: #2E383F;
+	position: relative;
+	float:left;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.btn-outline-warning{
+	position: relative;
+	margin-right:15px;
+	float: right;
+}
+.sort{
+	width: 286px;
+	height:1050px;
+}
+.input-group{
+	width: 250px;
+}
+.btn-outline-secondary{
+	width: 50px;
+}

@@ -1,0 +1,41 @@
+.navbar{
+	background-color: #24B1CD;
+	height: 50px;
+	}
+
+.l-block{
+	height: 715px;
+	width: 1366px;
+	background-color: #ECECEB;
+}
+.l-block2{
+	height: 107px;
+	width: 1366px;
+}
+.input-group{
+	margin-top: 10px;
+
+	position: relative;
+	width:410.08px;
+	left: 34.5%;
+}
+
+.form-control{
+	height: 35px;
+
+}
+.input-group-prepend{
+	width: 92px;
+}
+.input-group-text{
+	width: 94px;
+}
+.btn-warning{
+	margin-top: 32px;
+	left: 48%;
+	position: relative;
+	font-size: 18px;
+	width: 77px;
+	height: 43px;
+	color: #000;
+}
