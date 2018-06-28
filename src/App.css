@@ -1,10 +1,6 @@
+/*
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
 .App-header {
@@ -27,7 +23,7 @@
   to { transform: rotate(360deg); }
 }
 
-
+*/
 .Word {
  font-size: 1em;
  font-style: 微軟正黑體;
@@ -45,17 +41,3 @@
 .btn-outline-primary {
   margin-left: 10px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

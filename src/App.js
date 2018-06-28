@@ -1,60 +1,61 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter ,
+  Link,
+  withRouter,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import './App.css';
-import Router from './Router'; 
+import './Navbar.css';
+import Feild from './Feild';
 
-
-const data = [
-  {id: '0516213'}
-]
+const fake_data ={
+  id: '0516213',
+  image: 'https://avatars1.githubusercontent.com/u/6481273?v=4',
+  interest: [{interest: "攝影", rank: "3", article: "攝影請多多指教"}, 
+             {interest: "程式設計", rank: "3", article: "程式設計請多多指教"}, 
+             {interest: "平面設計", rank: "3", article: "平面設計請多多指教"}, 
+             {interest: "剪接影片", rank: "3", article: "剪接影片請多多指教"},
+             {interest: "健身", rank: "3", article: "健身請多多指教"}]
+}
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <BrowserRouter>
+        <div>
+          <Navbar data={fake_data} />
+          <Route exact path='/' render = {() => <Feild data={fake_data} /> } />
+          <Switch>
+            <Route path='/foo/:bar' component={ Message } />
+            <Route path='/foo' component={ Foo } />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
+        
 
-
-        <Router />
-
-        <div className = 'container'>  
-
-              <div class = 'row'>
-                      <div class = 'col-md-4 offset-md-1'>
-                        <img src ='https://image.flaticon.com/icons/svg/201/201818.svg'  class = 'img-circle'  width = '130' height = '130'/>
-                      </div>
-                      
-                      <div class = 'col-md-4'>
-                        <div style = {{ padding: 10, backgroundColor: '#FFFFFF', width: 250, height:130 }}> 
-                          <div class = 'Word'>
-                            姓名：Johnson King <br/> 學號：0516000 <br/> 信箱：abc@gmail.com <br/> 自我介紹：我愛攝影！
-                          </div>
-                        </div>
-                      </div>
-              </div>
-
-              <div className='button'>
-
-                <div style={{ padding: 20}}>                     
-                  <button type='button' className='btn btn-outline-primary'> 交大攝影新手團 </button>
-                
-
-                  <button type='button' className='btn btn-outline-primary'> 攝影愛好者社團 </button>
-
-                  <button type='button' className='btn btn-outline-primary'> 建立社群 </button>
-                      
-                </div>
-              </div>
-        </div>          
-
-      </div>
-   
-                    
-
-            
-
-
-           
-    
+class Navbar extends Component{
+  constructor(props){
+    super(props)
+  }
+  render() {
+    return (
+      <div className = "navbar">
+        <div className = "navbar_left">
+          <div>NCTU+</div>
+          <Link to="/search"><div className = "navbar_div">探索社群</div></Link>
+          <Link to="/mine"><div className = "navbar_div">我的社群</div></Link>
+        </div>
+        <div className = "navbar_image"><img src={this.props.data.image} /></div>  
+        <div className = "navbar_right">
+          <Link to="/"><div className = "navbar_div">{this.props.data.id}</div></Link>
+          <div>登出</div>
+        </div>
+      </div>   
     );
   }
 }
