@@ -1,3 +1,8 @@
+*{
+  padding:0;
+  margin:0;
+}
+
 .App {
   text-align: center;
 }
@@ -29,28 +34,75 @@
 
 
 .Word {
- font-size: 1em;
- font-style: 微軟正黑體;
+ font-size: 16px;
+ font-style: Segoe UI, Regular;
  text-align: left;
 }
 
 
 .container {
-  background-color: #DDDDDD;
+  background-color: #ECECEB;
   padding: 20px;
-  height: 250px;
-  width: 500px; 
+  height: 300px;
+  width: 600px; 
 }
 
 .btn-outline-primary {
-  margin-left: 10px; 
+  margin-left: 20px; 
 }
 
 
 
+.navBar {
+  background-color: #24B1CD;
+  padding: 20px;
+  height:50px;  
+}
+
+.titleBox {
+  background-color:  #FFFFFF;
+  padding: 28px;
+  height: 44px;
+  width: 888.08px;
+  margin-left: 199px;
+}
+
+.background {
+  background-color: #ECECEB;
+  height: 1000px;  
+}
+
+.title {
+  font-style: Segoe UI, Regular;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 199px;
+  padding-top: 105px;
+}
 
 
+.content {
+  font-style: Segoe UI, Regular;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 199px;
+  padding-top: 28px;
 
+}
+
+.contentBox {
+  background-color: #FFFFFF;
+  padding: 28px;
+  width: 888.08px;
+  margin-left: 199px;
+  height: 525px;
+}
+
+.btn-outline-warning {
+   margin-left: 20px
+
+
+}
 
 
 
