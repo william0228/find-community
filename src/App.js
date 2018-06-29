@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import './article.css';
-import Login from './Login';
-import Explore from './Explore';
 import {
-  BrowserRouter ,
+  BrowserRouter,
   Link,
-  withRouter,
+  //withRouter,
   Route,
-  Switch,
+  Switch
 } from 'react-router-dom';
 import './App.css';
 import './Navbar.css';
-import Feild from './Feild';
+import Introduce from './Introduce';
+import Article from './Article';
+import Explore from './Explore';
 
 const fake_data ={
   id: '0516213',
@@ -24,15 +23,21 @@ const fake_data ={
 }
 
 class App extends Component {
+  constructor(props){
+    super(props)
+  }
+
   render() {
     return (
       <BrowserRouter>
         <div>
-          <Navbar data={fake_data} />
-          <Route exact path='/' render = {() => <Feild data={fake_data} /> } />
+          <Navbar data = {fake_data} />
+          <Route exact path='/' render = {() => <Introduce data = {fake_data} /> } />
           <Switch>
-            <Route path='/foo/:bar' component={ Message } />
-            <Route path='/foo' component={ Foo } />
+            <Route path='/search' component={ Explore } />
+          </Switch>
+          <Switch>
+            <Route path='/logout' component={ Logout } />
           </Switch>
         </div>
       </BrowserRouter>
@@ -42,9 +47,6 @@ class App extends Component {
         
 
 class Navbar extends Component{
-  constructor(props){
-    super(props)
-  }
   render() {
     return (
       <div>
@@ -54,18 +56,27 @@ class Navbar extends Component{
             <Link to="/search"><div className = "navbar_div">探索社群</div></Link>
             <Link to="/mine"><div className = "navbar_div">我的社群</div></Link>
           </div>
-          <div className = "navbar_image"><img src={this.props.data.image} /></div>  
+          <div className = "navbar_image"><img src={this.props.data.image} alt="sorry"/></div>  
           <div className = "navbar_right">
             <Link to="/"><div className = "navbar_div">{this.props.data.id}</div></Link>
-            <div>登出</div>
+            <Link to="/logout"><div className = "navbar_div">登出</div></Link>
           </div>
-
         </div>   
-
-        <Login />
-        <Explore />
       </div>
     );
+  }
+}
+
+class Logout extends Component{
+  render(){
+    return(
+      <div className="container">
+        <div className="jumbotron">
+          <div className="display-1">Logout!</div>
+          <p>I'm Logout!<br/></p>  
+        </div>
+      </div>
+    )
   }
 }
 

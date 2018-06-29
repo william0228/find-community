@@ -2,15 +2,18 @@
 	width: 1366px;
 	height: 1233px;
 	background-color: #ECECEB;
-}
-.navbar{
-	background-color: #24B1CD;
-	height: 50px;
-	margin-top: 150px;
+	display: inline-block;
+
+	position: absolute;
+	left: -5%;
 }
 .list{
 	margin-top: 116px; 
 	width: 888px;
+	
+	position: absolute;
+	top: -2%;
+	left: 1%;
 }
 .e-title{
 	margin-top: 82px;
@@ -78,10 +81,48 @@
 .sort{
 	width: 286px;
 	height:1050px;
+	float: left;
+	position: absolute;
+	left: 75%;
+	top: 10%;
 }
 .input-group{
 	width: 250px;
+	margin-left: -35px;
 }
 .btn-outline-secondary{
 	width: 50px;
+}
+.search-check{
+	width: 100px;
+	height: 27px;
+	font-size: 20px;
+	position: absolute;
+	left: -10%;	
+}
+.form-check-label{
+	position: relative;
+	margin-left: 10px;
+}
+.sort-group{
+	margin-top: 220px;
+	margin-left: 60px;
+	width: 306px;
+	position: absolute;
+	left: -37%;
+
+}
+.btn-secondary{
+	margin-left: 20px;
+	margin-top:20px;
+	width: 133px;
+	height: 52px;
+}
+.btn-warning{
+	width: 77px;
+	height: 43px;
+
+	position: relative;
+	left: 49px;
+	top: 13px;
 }

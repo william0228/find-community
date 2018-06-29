@@ -1,0 +1,36 @@
+.Word {
+ font-size: 1em;
+ text-align: left;
+}
+
+.Introduce_a{
+	position: relative;
+	left: 137px;
+}
+
+.Introduce_container {
+  background-color: #ECECEB;
+  padding: 20px;
+  height: 290px;
+  width: 500px; 
+  border-top: 96px;
+	display: inline-block;
+  position: absolute;
+	left: 9%;
+	top: 25%;
+
+}
+
+.btn-outline-primary {
+  margin-left: 10px; 
+}
+
+.Introduce_right{
+	width: 388px;
+	height: 290px;
+	
+	display: inline-block;
+	position: absolute;
+	left: 56%;
+	top: 25%;
+}
